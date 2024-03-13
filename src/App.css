@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Oswald:wght@200..700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.MainCon {
+  padding-top: 20px;
+  background: url('./Assets/Background.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.mynavbar {
+  width: 90vw;
+  height: auto;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0px 12px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(6.5px);
+  -webkit-backdrop-filter: blur(6.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.navhead {
+  padding-left: 3%;
+  display: flex;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: black;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.navhead button{
+  margin-right: 3%;
+}
+.navlinks {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.navbarlink {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: linear 0.1s;
+  margin-left: 20px;
+  margin-right: 20px;
+
+}
+.navbarlink:hover {
+ scale:1.1;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.Eyeglasses {
+  margin:20px;
+    /* background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    gap:20px; */
+}
+.mainproduct
+{
+  width:85vw;
+  height:70vh;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.productdetails{
+    width:50%;
+    height:100%;
+    background-color: rgb(255, 255, 0);
+    display: flex;
+    flex-direction: column;
+    padding:7%;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    text-align: justify;
+}
+.productdetails h1{
+  
+  font-size: 4rem;
+}
+.productdetails button{
+  background-color: 	rgb(255, 0, 191);
+  width:20%;
+  height:auto;
+  transition: linear 0.14s;
+}
+.productdetails button:hover{
+  scale: 1.2;
+}
+.productpic{
+  width:50%;
+  height:100%;
+  /* background-color: rgb(93, 0, 255); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 8px 32px 0 rgba(188, 190, 219, 0.37);
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.productpic img{
+  max-width: 80%;
+  max-height:80%;
+}
+.productpic:hover img{
+  scale: 1.1;
+}
+.productpic:hover h2{
+  color: rgb(255, 0, 191);
+}
+.productlist
+{
+  width:85vw;
+  height:auto;
+  /* background-color: black; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.minproduct{
+  width:30%;
+  height:40vh;
+  padding:2%;
+/* background-color: blue; */
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5px );
+-webkit-backdrop-filter: blur( 5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.minproduct:hover{
+  scale: 1.01;
+}
+.minproduct .smallspectpic{
+  width:70%;
+  height:80%;
+  margin:2%;
+  /* background-color: brown; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.minproduct .smallspectpic img{
+  max-width: 80%;
+  max-height:80%;
+}
+.sunglasses {
+  width: 85vw;
+  height: 80vh;
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:5px;
+}
+.copyright p{
+  color: var(--col5);
+  font-size: 20px;
+}
+
+
+@media (max-width:900px) {
+  .mainproduct{
+    height:100vh;
+    flex-direction: column;
+  }
+  .productdetails{
+    width:100%;
+    height:50%;
+  }
+  .productpic{
+    width:100%;
+    height:50%;
+  }
+}
+@media (max-width:600px){
+  .productlist{
+    flex-direction: column;
+    gap:10px;
+  }
+  .minproduct{
+    width:80%;
+    height:30vh;
+  }
+  h1{
+    font-size: 2rem;
+  }
+}
