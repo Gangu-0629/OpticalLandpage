@@ -9,7 +9,7 @@ import SunGlasses from './Components/SunGlasses';
 import 'bootstrap/dist/css/bootstrap.min.css';
 const routes=createBrowserRouter([
   {
-    path:"/",
+    path:"/OpticalLandpage/",
     element:<App/>,
     children:[{
       path:"",
